@@ -54,7 +54,7 @@ function delete($file)
     }
     if (isset($_POST['content'])){
         $route = $_POST['route'];
-        $content =$_POST['Content'];
+        $content =$_POST['content'];
         file_put_contents ( $route, $content);
     }
     show('files');
